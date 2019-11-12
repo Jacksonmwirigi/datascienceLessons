@@ -69,3 +69,28 @@ ax.set_title('Distribution by Rank in %')
 ax.set_xlabel('Rank')
 ax.set_ylabel('')
 plt.show()
+
+
+"""
+plotting a simple pie 
+"""
+
+views= [100, 204,455]  #using sample test data to plot a pie
+labels= ['facebook','twitter','instagram']  #adding labes to our pie
+plt.pie(views, labels=labels, autopct='%1.1f%%')  # [autopct='%1.1f%%' ] this includes the percentage ratios.
+plt.show()
+
+# lables = ['1st Rank','2nd Rank','3rd Rank','4th Rank'] #adding labels to our pie
+# grouping = data.groupby(data.Gender).size() #grouping our data based on the Rank
+# plt.pie(grouping, labels=lables, autopct='%1.1f%%') #plotting a simple pie
+# plt.show()
+"""
+plotting a standard pie 
+"""
+# First make figure and axes
+fig, axs = plt.subplots()
+# Plotting a standard pie plot
+labels = ['1st Rank','2nd Rank','3rd Rank','4th Rank'] #adding labels to our pie
+data_grouping= data.groupby(data.Rank).size()
+axs.pie(data_grouping, labels=labels, autopct='%1.1f%%', shadow=True)
+plt.show()
