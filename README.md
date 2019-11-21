@@ -6,6 +6,7 @@
 3. Python condition statements- if, for and while loop.
 4. Data Cleaning using Pandas.
 5. Data Visualisation using matplotlib.
+6. Machine Learning Algorithms- RandomForestClassifier.
 
 ### *This is among the courses offered at Modcom Institute, KE.*
 <https://modcom.co.ke/>
