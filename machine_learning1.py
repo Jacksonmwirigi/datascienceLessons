@@ -1,6 +1,12 @@
 import  pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
+#Import scikit-learn metrics module for accuracy calculation
+from sklearn.metrics import accuracy_score
+#import below to help in splitting our dataset into train and test.
+from sklearn.model_selection import train_test_split
+
 data = pd.read_csv('bank_updated.csv')
 
 # Label → Creditable or Not Creditable (1 or 0)
@@ -20,8 +26,6 @@ data['job'].replace({'unemployed':0, 'housemaid':1,
                      'services':6, 'admin.':7,'self-employed':8,
                      'retired':9, 'student':10,'unknown':11}, inplace= True)
 
-
-
 data['marital'].replace({ 'married':0, 'single':1,
                           'divorced':2, 'unknown':3}, inplace= True)
 data['education'].replace({'primary':0, 'secondary':1,
@@ -37,18 +41,11 @@ splitting our dataset into train and test
 """
 #setting 75% of our data to be train and the 25% for testing
 #Splitting dataset into 2 helps in calculating the accuracy of our training model.
-data['is_train'] = np.random.uniform(0,1, len(data))<=.75
-# print(data.head(10))
 
-"""
-Creating test and train dataframes
-"""
-train = data[data['is_train']==True] #creating a list of train data
-test=data[data['is_train']==False] #creating a list of test data
+train, test = train_test_split(data, test_size=0.2)
+print('number of test ',len(test))
 
-print('the number of the train dataframe is ',len(train)) #print the length of our train dataset list
-print('the number of the test dataframe is ',len(test)) #print the length of our test dataset list
-# print('printing X variable for the train dataset')
+print('number of train ',len(train))
 # print(train[X].head()) #testing our data splitting by printing for train and test separate
 
 # print('printing X variable for the test dataset')
@@ -87,3 +84,12 @@ Viewing predicted prababilities of the first 15 rows.
 """
 proba_predictions= clf.predict_proba(test[X])[0:15]
 print(proba_predictions)
+accuracy= accuracy_score(prediction,test['loan'])
+print('printing accuracy')
+print(accuracy*100)
+
+
+predict_report=classification_report(test['loan'], prediction)
+print('printing predict report')
+print(predict_report)
+
