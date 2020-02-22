@@ -4,9 +4,15 @@
 1. Python variables, Data Types, Lists, and Dictionaries.
 2. Python Functions and Classes.
 3. Python condition statements- if..else
-4. for and While loops.
-5. Data Cleaning using Pandas.
-6. Data Visualisation using Matplotlib library.
-7. Machine Learning Algorithms- RandomForestClassifier, LinearRegression (Classification and Regression).
+4. Python For and While loops.
+5. Data Science.
+    1. Data Cleaning using Pandas.
+    2. Data Visualisation using Matplotlib library.
+7. Machine Learning.
+    1. RandomForestClassifier 
+    2. LinearRegression 
+    3. Classification
+    4. Regression.
 
-###### *The Course Instructor was Jackson Mwirigi*
+###### Course was offered at [modcom.co.ke](modcom.co.ke)
+###### *Course Instructor: Jackson Mwirigi*
