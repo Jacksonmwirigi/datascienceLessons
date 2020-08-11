@@ -14,5 +14,5 @@
     3. Classification
     4. Regression.
 
-###### Course was offered at [modcom.co.ke](modcom.co.ke)
-###### *Course Instructor: Jackson Mwirigi* [jacksonmwirigi@gmail.com](jackson)
+###### Connect with on [linkedIn](https://www.linkedin.com/in/jackson-mwirigi/)
+###### *Course Instructor: Jackson Mwirigi* jacksonmwirigi@gmail.com
