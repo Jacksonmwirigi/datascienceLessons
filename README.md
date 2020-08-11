@@ -14,5 +14,5 @@
     3. Classification
     4. Regression.
 
-###### Connect with on [linkedIn](https://www.linkedin.com/in/jackson-mwirigi/)
+###### Connect with me on [linkedIn](https://www.linkedin.com/in/jackson-mwirigi/)
 ###### *Course Instructor: Jackson Mwirigi* jacksonmwirigi@gmail.com
